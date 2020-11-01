@@ -18,6 +18,7 @@ app.use(express.json());
 // app.use(express.urlencoded({ extended: false }));
 
 //API routes
+app.get("/", (req, res) => res.status(200).send("Here we GO!"));
 app.get("/hey", (req, res) => res.status(200).send("Yooooo!!"));
 
 app.post("/payments/create", async (req, res) => {
